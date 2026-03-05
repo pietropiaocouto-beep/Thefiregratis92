@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TheFire Sensi Generator</title>
+
+<style>
+
+body{
+background:black;
+color:white;
+font-family:Arial;
+text-align:center;
+}
+
+.box{
+margin-top:120px;
+}
+
+input,select{
+padding:10px;
+background:black;
+border:2px solid white;
+color:white;
+}
+
+button{
+padding:12px 25px;
+background:white;
+color:black;
+border:none;
+cursor:pointer;
+font-weight:bold;
+}
+
+#painel{
+display:none;
+margin-top:40px;
+}
+
+.result{
+margin-top:30px;
+border:2px solid white;
+padding:20px;
+display:inline-block;
+}
+
+.vip{
+margin-top:30px;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="box" id="login">
+
+<h1>THE FIRE ⚫⚪</h1>
+<p>Digite a senha</p>
+
+<input type="password" id="senha" placeholder="Senha">
+
+<br><br>
+
+<button onclick="entrar()">ENTRAR</button>
+
+</div>
+
+<div id="painel">
+
+<h2>GERADOR DE SENSI FREE FIRE</h2>
+
+<p>Escolha a marca do seu celular</p>
+
+<select id="marca">
+
+<option>Samsung</option>
+<option>Motorola</option>
+<option>Xiaomi</option>
+<option>Redmi</option>
+<option>Poco</option>
+<option>Realme</option>
+<option>iPhone</option>
+<option>Huawei</option>
+<option>Honor</option>
+<option>Asus</option>
+<option>OnePlus</option>
+<option>Lenovo</option>
+<option>LG</option>
+<option>Nokia</option>
+<option>Oppo</option>
+<option>Vivo</option>
+<option>Tecno</option>
+<option>Infinix</option>
+<option>Google Pixel</option>
+<option>Sony</option>
+
+</select>
+
+<br><br>
+
+<button onclick="gerar()">GERAR SENSI</button>
+
+<div class="result" id="resultado"></div>
+
+<div class="vip">
+
+<br><br>
+
+<a href="https://chat.whatsapp.com/DpWFKgoV9rU92ecL16ASAd?mode=gi_t" target="_blank">
+
+<button>🔥 COMPRE O VIP</button>
+
+</a>
+
+</div>
+
+</div>
+
+<script>
+
+function entrar(){
+
+let senha = document.getElementById("senha").value;
+
+if(senha === "thefire3030gratis"){
+
+document.getElementById("login").style.display="none";
+document.getElementById("painel").style.display="block";
+
+}else{
+
+alert("Senha errada");
+
+}
+
+}
+
+function gerar(){
+
+let geral = Math.floor(Math.random()*10)+90
+let red = Math.floor(Math.random()*10)+90
+let x2 = Math.floor(Math.random()*10)+85
+let x4 = Math.floor(Math.random()*10)+80
+let awm = Math.floor(Math.random()*20)+50
+let dpi = Math.floor(Math.random()*200)+400
+let botao = Math.floor(Math.random()*25)+55
+
+document.getElementById("resultado").innerHTML=
+
+`
+🎯 SENSI GERADA
+
+<br><br>
+
+GERAL: ${geral}<br>
+PONTO VERMELHO: ${red}<br>
+MIRA 2X: ${x2}<br>
+MIRA 4X: ${x4}<br>
+AWM: ${awm}
+
+<br><br>
+
+⚙ CONFIG DO CELULAR
+
+<br><br>
+
+DPI RECOMENDADA: ${dpi}<br>
+BOTÃO DE TIRO: ${botao}
+
+<br><br>
+
+🔥 DICAS PARA SUBIR CAPA
+
+<br>
+
+• Arraste o dedo rápido para cima<br>
+• Use botão entre 55 e 70<br>
+• Use DPI alta<br>
+• Sensibilidade geral acima de 90
+`
+
+}
+
+</script>
+
+</body>
+</html>
